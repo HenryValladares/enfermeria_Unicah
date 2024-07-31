@@ -1,0 +1,20 @@
+{{#each progrmasCard}}
+<div class="row mt-4">
+    <div class="col">
+        <!-- Botón que controla la visibilidad del contenido colapsable -->
+        <button class="btn btn-warning" data-toggle="collapse" data-target="#{{dataTarget}}">
+            {{Etiquetabutton}}
+        </button>
+        <!-- Contenido colapsable -->
+        <div id="{{dataTarget}}" class="collapse mt-3">
+            <!-- Título y imagen del contenido colapsable -->
+            <h2>
+                <img class="subtema-img" src="{{imagen}}" alt="{{alt}}">
+                {{Titulo}}
+            </h2>
+            <!-- Descripción del contenido colapsable -->
+            <p class="descripcion">{{parrafo}}</p>
+        </div>
+    </div>
+</div>
+{{/each}}

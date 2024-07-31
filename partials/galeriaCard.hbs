@@ -1,0 +1,24 @@
+{{#each TipoArchivo}}
+<!-- Itera sobre cada tipo de archivo en la lista TipoArchivo -->
+<div id="{{name}}" class="contenedorCard">
+    <!-- Contenedor principal para cada tipo de archivo -->
+    <div class="box_conteiner">
+        <!-- Sección para el título del tipo de archivo -->
+        <h2 class="titulo">{{name}}</h2> <!-- Mostrar el nombre del tipo de archivo aquí -->
+        <!-- Puedes cambiar el nombre de las galerías y ajustar el texto de 'Aniversario' en los datos -->
+    </div>
+    <section class="image_container">
+        <!-- Contenedor para las imágenes asociadas con el tipo de archivo -->
+        {{#filtrarPorTipo ../imagenes name}}
+        <!-- Filtra las imágenes según el tipo actual -->
+        <div class="image">
+            <!-- Contenedor para cada imagen -->
+            <img src="{{src}}" alt="{{alt}}" /> <!-- Mostrar la imagen con su descripción alternativa -->
+        </div>
+        {{/filtrarPorTipo}}
+        <!-- Fin del filtro por tipo -->
+    </section>
+    <!-- Fin del contenedor de imágenes -->
+</div>
+{{/each}}
+<!-- Fin de la iteración sobre TipoArchivo -->

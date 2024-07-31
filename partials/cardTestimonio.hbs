@@ -1,0 +1,25 @@
+{{#each CardTestimonios}}
+<div class="row">
+    <div class="col-md-6">
+        <!-- Tarjeta de testimonio -->
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <!-- Imagen del testimonio -->
+                    <img src="{{src}}" class="img-fluid rounded-start" alt="{{alt}}">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <!-- Título del testimonio -->
+                        <h5 class="card-title">{{h5}}</h5>
+                        <!-- Texto del testimonio -->
+                        <p class="card-text">{{p}}</p>
+                        <!-- Texto adicional en pequeño -->
+                        <p class="card-text"><small class="text-muted">{{small}}</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}

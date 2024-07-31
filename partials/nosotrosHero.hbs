@@ -1,0 +1,18 @@
+{{#each nosotrosHero}}
+<section class="hero">
+    <picture>
+        <!-- Imagen para pantallas de 1024px y superiores -->
+        <source src="{{picturesrc1}}" media="(min-width: 1024px)">
+        <!-- Imagen para pantallas de 720px y superiores -->
+        <source src="{{picturesrc2}}" media="(min-width: 720px)">
+        <!-- Imagen por defecto -->
+        <img src="{{imgsrc}}" alt="{{alt}}">
+    </picture>
+    <!-- Título de la sección -->
+    <h2>{{h2}}</h2>
+    <!-- Enlace a otra página -->
+    <a href="{{url}}">{{text}}</a>
+    <br>
+</section>
+<br>
+{{/each}}

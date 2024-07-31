@@ -1,0 +1,20 @@
+{{#each blogCard}}
+<!-- Itera sobre cada elemento en la lista blogCard -->
+<section class="card">
+    <!-- Contenedor principal para cada tarjeta de blog -->
+    <div class="card-image">
+        <!-- Sección para la imagen del blog -->
+        <img alt="{{alt}}" src="{{src}}" /> <!-- Muestra la imagen del blog con su descripción alternativa -->
+    </div>
+    <h2 class="title">{{titulo}}</h2>
+    <!-- Título del blog -->
+    <p class="parrafo">
+        {{parrafo}}
+        <!-- Contenido del blog -->
+        <br><br>
+        <small>{{small}}</small>
+        <!-- Información adicional, como la fecha o autor -->
+    </p>
+</section>
+{{/each}}
+<!-- Fin de la iteración sobre blogCard -->

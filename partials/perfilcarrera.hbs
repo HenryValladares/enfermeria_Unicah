@@ -1,0 +1,80 @@
+<div class="row">
+    <div class="col-3">
+        <div class="list-group position-fixed">
+            <a class="list-group-item list-group-item-action" href="#list-item-1">Introducción</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">Actividades Fundamentales</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">Tareas Tipicas</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">Habilidades y Caracteristicas</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-5">Ambientes de Trabajo</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-6">Aspectos Curriculares</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-7">Plan de Estudio</a>
+        </div>
+    </div>
+    <div class="col-8">
+        <div>
+            {{#each Descripcion}}
+            <div class="item">
+                <h4 id="list-item-1">{{titulo}}</h4>
+                <p>{{parrafo}}</p>
+            </div>
+            {{/each}}
+            <div class="item">
+                <h4 id="list-item-2">Actividades Fundamentales de la Carrera</h4>
+                <p>El(la) profesional de Enfermería está capacitado(a) para desarrollar las siguientes actividades:</p>
+                <ul>
+                    {{#each af}}
+                    <li><strong>{{titulo}}</strong>{{descrip}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+
+            <div class="item">
+                <h4 id="list-item-3">Tareas Típicas que Realiza el Estudiante de esta Carrera</h4>
+                <ul>
+                    {{#each tt}}
+                    <li>{{tarea}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+
+            <div class="item">
+                <h4 id="list-item-4">Habilidades y Características Deseables en la Carrera</h4>
+                <ul>
+                    {{#each hc}}
+                    <li>{{habil}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+
+            <div class="item">
+                <h4 id="list-item-5">Ambientes y Lugares de Trabajo</h4>
+                <p>Un(a) egresado(a) de esta carrera podrá desempeñarse en:</p>
+                <ul>
+                    {{#each al}}
+                    <li>{{lugar}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+
+            <div class="item">
+                <h4 id="list-item-6">Aspectos Curriculares</h4>
+                <ul>
+                    {{#each ac}}
+                    <li><strong>{{titulo}}</strong>{{descrip}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+
+
+            <div class="item">
+                <h4 id="list-item-7">Plan de Estudio</h4>
+                <p>El plan de estudios de la carrera de Enfermería en la Univercidad Catolica está diseñado para proporcionar una
+                    formación integral y actualizada en áreas como anatomía, fisiología, microbiología, farmacología,
+                    enfermería comunitaria, cuidados intensivos, entre otros. Se incluyen prácticas clínicas
+                    supervisadas para garantizar una formación práctica y realista.</p>
+                <a class="btn btn-outline-warning" href="https://curla.unah.edu.hn/assets/Uploads/Enfermeria.pdf"
+                    role="button">Descargar Plan de Estudio</a>
+            </div>
+        </div>
+    </div>
+</div>
