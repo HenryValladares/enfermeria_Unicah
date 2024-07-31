@@ -1,0 +1,38 @@
+@primary-bg-color: #030303;
+@primary-tx-color: #018cfe;
+@secondary-bg-color: #26326e;
+@secondary-tx-color: #faf9f9;
+
+@display_breaks: {
+    md: 720px;
+    lg: 1025px;
+    xlg: 1201px;
+};
+
+@import "header.less";
+@import "hero.less";
+@import "inicio.less";
+@import "nosotros.less";
+@import "programas.less";
+@import "calendario.less";
+@import "contactos.less";
+@import "card.less";
+@import "galeria.less";
+@import "listgroups.less";
+@import "faq.less";
+@import "footers.less";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: @primary-bg-color;
+    color: @primary-tx-color;
+}

@@ -1,0 +1,184 @@
+.inicio {
+    .hero {
+        h2 {
+            position: center;
+            top: 50%;
+            left: 50%;
+            padding: 0%;
+            margin: 0%;
+            width: 60%;
+            padding: 1rem 2rem;
+            border: 1px solid #0376fa5b;
+            border-radius: 27px;
+            bottom: 60%;
+            background-color: #0376fa5b;
+        }
+
+        a {
+            position: absolute;
+            display: block;
+            padding: 1rem 2rem;
+            border: 1px solid #0376fa5b;
+            border-radius: 27px;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #0376fa5b;
+        }
+    }
+
+    .hero::after {
+        content: '';
+        display: block;
+    }
+
+    .description {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 380px;
+        width: 100%;
+        color: #fff;
+        background-color: #000;
+
+        @media (min-width:720px) {
+            height: 500px;
+        }
+
+        h2 {
+            position: center;
+            top: 40%;
+            left: 0%;
+            padding: 0%;
+            margin: 0%;
+            width: 100%;
+            text-align: center;
+            padding: 5.2rem 2rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            transform: translateX(0%);
+            background-color: #0000005b;
+
+            @media (min-width:720px) {
+                font-size: 3rem;
+            }
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        p {
+            position: center;
+            top: 0%;
+            left: 0%;
+            padding: 0%;
+            margin: 0%;
+            width: 100%;
+            text-align: top;
+            padding: 3rem 2rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            transform: translateX(0%);
+            background-color: #0000005b;
+            font-weight: 300;
+
+            @media (min-width:720px) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .description::after {
+        content: '';
+        display: block;
+    }
+
+    .mision {
+        @media (min-width:720px) {
+            height: 500px;
+        }
+
+        h2 {
+            position: center;
+            top: 40%;
+            left: 0%;
+            padding: 5%;
+            margin: 0%;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #0376fa;
+            transition: all 0.3s ease-in-out;
+            transform: translateX(-5%);
+            background-color: #00000000;
+
+            @media (min-width:720px) {
+                font-size: 3rem;
+            }
+        }
+
+        p {
+            position: center;
+            text-align: top;
+            font-family: Arial, sans-serif;
+            padding: 3rem 2rem;
+            font-weight: 300;
+            color: #0376fa;
+            transform: translateX(0%);
+
+            @media (min-width:720px) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+
+    h2 {
+        position: center;
+        top: 40%;
+        left: 0%;
+        padding: 0%;
+        margin: 0%;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 700;
+        color: #0376fa;
+        transition: all 0.3s ease-in-out;
+        transform: translateX(-5%);
+        background-color: #00000000;
+    }
+
+    .testimonials {
+        text-align: center;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        .card {
+            max-width: 540px;
+        }
+    }
+
+
+}

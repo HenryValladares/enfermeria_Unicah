@@ -1,0 +1,39 @@
+header {
+    background-color: @primary-bg-color;
+    color: @primary-tx-color;
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .navbar-toggler{
+        border-color:  @primary-tx-color;
+        color: @primary-tx-color;
+    }
+
+    .navbar-nav {
+        background-color: @primary-bg-color;
+        z-index: 100;
+
+        @media (min-width: 1200px) {
+            transform: translateX(0%);
+            background-color: transparent;
+        }
+    }
+
+    .nav-link{
+        color: @primary-tx-color;
+        border-radius: 10px;
+        transition: background-color 0.5s linear, color 0.5s linear;
+    }
+
+    .nav-link:hover {
+        background-color: @primary-tx-color;
+        color: @primary-bg-color;  
+    }
+
+    .btn {
+        transition: background-color 0.5s linear, color 0.5s linear;
+    }
+}

@@ -1,0 +1,52 @@
+.blog {
+    background-color: @primary-bg-color;
+
+    h1{
+        color: @primary-tx-color;
+        text-align: center;
+    }
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto auto;
+
+        .card {
+            padding: 10px;
+            margin: 10px;
+            background: rgb(176, 55, 55);
+            border-radius: 10px;
+            transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(190, 190, 190), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            position: relative;
+            width: calc(90%/3);
+            min-width: 300px;
+
+            &:hover {
+                transform: scale(1.1);
+                z-index: 90;
+            }
+
+            .card-image {
+                img {
+                    width: 100%;
+                    height: 220px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    margin: flex;
+                }
+            }
+
+            .title {
+                color: #0f3666;
+                text-align: center;
+                display: block;
+                margin: 6px;
+            }
+
+            p {
+                color: #0f3666;
+            }
+        }
+    }
+}
